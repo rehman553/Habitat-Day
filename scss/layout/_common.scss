@@ -527,6 +527,9 @@ hr {
             font-size: 1.25rem;
         }
     }
+    .animated-link {
+        background-image: linear-gradient(#fff,#fff),linear-gradient(#fff,#fff);
+    }
 }
 
 .hide-sm {
@@ -633,18 +636,18 @@ blockquote {
         position: relative;
         max-width: 947px;
         height: 620px;
-        @media screen and (max-width: 600px) {
+        @include media('<=phone') {
             height: auto;
         }
         .show-large {
             display: block;
-            @media screen and (max-width: 600px) {
+            @include media('<=phone') {
                 display: none;
             }
         }
         .show-sm {
             display: none;
-            @media screen and (max-width: 600px) {
+            @include media('<=phone') {
                 display: block;
             }
         }
@@ -652,20 +655,20 @@ blockquote {
             width: 947px;
             height: 620px;
             object-fit: cover;
-            @media screen and (max-width: 600px) {
+            @include media('<=phone') {
                 height: auto;
             }
         }
     }
     .container {
-        @media screen and (max-width: 600px) {
+        @include media('<=phone') {
             position: relative;
         }
     }
     .text {
         max-width: 448px;
         margin: 0 auto;
-        @media screen and (max-width: 500px) {
+        @include media('<=phone') {
             @include position(0,auto,auto,50%);
             transform: translateX(-50%);
             z-index: 2;
@@ -682,7 +685,7 @@ blockquote {
         h2 {
             font-family: $base-font-sans-serif;
             margin-bottom: 16px;
-            @media screen and (max-width: 500px) {
+            @include media('<=phone') {
                 font-size: 2.5rem;
                 margin-bottom: 15px;
             }
@@ -694,7 +697,10 @@ blockquote {
     .bubble {
         max-width: 278px;
         @include position(15%, auto, auto, 30%);
-        @media screen and (max-width: 500px) {
+        @include media('<=tablet') {
+            max-width: 250px;
+        }
+        @include media('<=phone') {
             top: auto;
             bottom: 10%;
             max-width: 143px;
@@ -704,7 +710,7 @@ blockquote {
         &.sm {
             top: 40%;
             left: 25%;
-            @media screen and (max-width: 500px) {
+            @include media('<=phone') {
                 top: auto;
                 bottom: 32%;
                 max-width: 102px;
@@ -788,6 +794,9 @@ blockquote {
         @include media('>=widescreenx') {
             width: 4000px;
         }
+    }
+    .animated-link {
+        background-image: linear-gradient(#fff,#fff),linear-gradient(#fff,#fff);
     }
     p {
         font-size: 1rem;

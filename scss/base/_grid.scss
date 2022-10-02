@@ -271,7 +271,7 @@
     margin-left: 91.666667%;
 }
 
-@include media(">=xs-phone") {
+@include media(">=phone") {
 
     .col-xs {
         flex-basis: 0;
