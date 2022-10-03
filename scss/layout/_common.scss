@@ -320,6 +320,7 @@ hr {
     &.blue {
         background-image: url(../images/bg-blue.png);
         background-repeat: repeat;
+        color: $black;
         @include media('<=phone') {
             color: $black;
             padding: 12px 30px; 

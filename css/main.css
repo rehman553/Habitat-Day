@@ -2981,6 +2981,7 @@ hr {
 .env-title.blue {
   background-image: url(../images/bg-blue.png);
   background-repeat: repeat;
+  color: #000;
 }
 @media (max-width: 767px) {
   .env-title.blue {
