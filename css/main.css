@@ -2345,9 +2345,31 @@ img {
 }
 @font-face {
   font-family: "Sohne Breit";
+  src: url("../fonts/SohneBreit-FettKursiv.woff2") format("woff2"), url("../fonts/SohneBreit-FettKursiv.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sohne Breit";
+  src: url("../fonts/SohneBreit-DreiviertelfettKurs.woff2") format("woff2"), url("../fonts/SohneBreit-DreiviertelfettKurs.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sohne Breit";
   src: url("../fonts/SohneBreit-Fett.woff2") format("woff2"), url("../fonts/SohneBreit-Fett.woff") format("woff");
   font-weight: 900;
   font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Sohne Breit";
+  src: url("../fonts/SohneBreit-Dreiviertelfett.woff2") format("woff2"), url("../fonts/SohneBreit-Dreiviertelfett.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "Proxima Nova";
