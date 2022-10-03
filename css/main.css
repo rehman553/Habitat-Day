@@ -3669,6 +3669,9 @@ blockquote q {
     height: 836px;
   }
 }
+.cities-holder .animated-link {
+  background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff);
+}
 @media (max-width: 767px) {
   .cities-holder video {
     object-fit: cover;

@@ -882,6 +882,9 @@ blockquote {
     @include media('<=phone') {
         height: 836px;
     }
+    .animated-link {
+        background-image: linear-gradient(#fff, #fff), linear-gradient(#fff, #fff);
+    }
     video {
         @include media('<=phone') {
             object-fit: cover;
